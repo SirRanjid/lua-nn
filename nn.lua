@@ -1,3 +1,5 @@
+--lua nn SirRanjid (https://github.com/SirRanjid/lua-nn) 2018
+
 local function isNaN( v ) return tostring(v) == "nan" or tostring(v) == "inf" or tostring(v) == "-inf" end
 
 local function pt(tbl,d,n)
