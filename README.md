@@ -7,8 +7,11 @@ Just do like:
 
 local nn = require("nn")
 local x = 3   --amount of layers
+
 local y = 5   --default amount of neurons per layer
+
 local y_inputs = 2  --nodes of input layer (the original 5 of y become 2 for the first layer, *not* a new layer with 2 as input)
+
 local y_outputs = 1  --nodes of output layer
 
 local activation_func = nn.func.sig
