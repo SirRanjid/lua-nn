@@ -1,5 +1,5 @@
 # lua-nn
-Lua based Neural Network
+Lua based Neural Network (better view raw readme)
 
 It's WIP.
 
