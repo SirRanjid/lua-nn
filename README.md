@@ -16,7 +16,6 @@ local act_f_drv = nn.func.asig
 local lear_rate = 0.02
 
 new_net = nn(x,y,y_inputs,y_outputs,activation_func, act_f_drv, lear_rate) --generate a new_net
---y_inputs,y_outputs define the size of the first and last layer(not added to x), y is y(nodes of layer) of all hidden
 new_net:addlayer(y) --becomes new output layer
 new_net:build() --make weights for all connections
 
@@ -34,6 +33,7 @@ local batchsize = 10
 for I = 1, batches
   for J = 1, batchsize do
     new_net:smart_train(train_pairs,0.6) --0.6  60% chance of picking a random pair, 40% picking the one that gives least error
+    --smart_train is experimental and picks a random pair from train_pairs and keeps track of the error
   end
   new_net:applybatch() --apply weight updates
 end
