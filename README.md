@@ -7,11 +7,8 @@ Just do like:
 
 local nn = require("nn")
 local x = 3   --amount of layers
-
 local y = 5   --default amount of neurons per layer
-
 local y_inputs = 2  --nodes of input layer (the original 5 of y become 2 for the first layer, *not* a new layer with 2 as input)
-
 local y_outputs = 1  --nodes of output layer
 
 local activation_func = nn.func.sig
@@ -23,6 +20,7 @@ new_net:addlayer(y) --becomes new output layer
 new_net:build() --make weights for all connections
 
 local train_pairs = {
+
 	{{0,0},{0}},
 	{{1,0},{1}},
 	{{0,1},{1}},
