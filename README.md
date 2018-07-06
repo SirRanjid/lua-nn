@@ -38,3 +38,6 @@ for I = 1, batches
   end
   new_net:applybatch() --apply weight updates
 end
+
+
+Funny how the actual script is just 1/3 of this repositories files.
